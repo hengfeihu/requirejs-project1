@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>requirejs-index</title>
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+这是我的第一个requirejs项目<br/>
+<a href="javascript:loadjs('test')">加载test</a>
+</body>
+<script>
+    loadjs = function (j) {
+        require([j], function () {
+
+        });
+    }
+</script>
+</html>
